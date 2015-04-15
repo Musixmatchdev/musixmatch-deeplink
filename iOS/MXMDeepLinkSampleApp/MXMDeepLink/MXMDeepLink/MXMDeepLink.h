@@ -6,5 +6,9 @@
 //  Copyright (c) 2014 Loreto Parisi. All rights reserved.
 //
 
-#import "MXMDeepLinkHelper.h"
+#ifndef MXMDeepLink_MXMDeepLink_h
+#define MXMDeepLink_MXMDeepLink_h
 
+#import <MXMDeepLink/MXMDeepLinkHelper.h>
+
+#endif
