@@ -26,6 +26,8 @@
 
 @implementation ViewController
 
+@synthesize title,titleTrack,album,artist,artWork,playPauseButton,nextTrackButton,prevTrackButton,trackProgress,trackRemainingTime;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -81,12 +83,15 @@
 
 #pragma mark - Deep Link Tests
 
--(void)runTestCanOpenMusixmatch {
-    BOOL canOpenApp=[[MXMDeepLinkHelper sharedInstance] canOpenCallerApp];
+-(IBAction)runTestCanOpenMusixmatch {
+    BOOL canOpenApp=[MXMDeepLinkHelper canOpenMusixmatchApp];
     NSLog(@"runTestDeepLinkMusicID can open %d", canOpenApp);
+    [self showAlertWithTitle:@"INFO" message:
+                    [NSString stringWithFormat:@"Musixmatch app is %d installed", canOpenApp]
+                    delegate:self];
 }
 
--(void) runtTestDeepLinkTrackWithTrackID {
+-(IBAction) runtTestDeepLinkTrackWithTrackID {
     
     /// Following please use a valid Musixmatch Track Identifier
     /// To get a Musixmatch App Id (trackid) please refer to
@@ -99,7 +104,7 @@
     [[MXMDeepLinkHelper sharedInstance] openMusixmatchWithTrackID:trackId];
 }
 
--(void) runTestDeepLinkMusicID {
+-(IBAction) runTestDeepLinkMusicID {
     
     BOOL canOpenApp=[[MXMDeepLinkHelper sharedInstance] canOpenCallerApp];
     NSLog(@"runTestDeepLinkMusicID can open %d", canOpenApp);
@@ -109,17 +114,17 @@
     
 }
 
--(void) runTestDeepLinkNowPlaying {
+-(IBAction) runTestDeepLinkNowPlaying {
     [[MXMDeepLinkHelper sharedInstance] setAppID:appIdentifier];
     [[MXMDeepLinkHelper sharedInstance] openMusixmatchNowPlayingTrack];
 }
 
 
--(void) runTestDeepLinkTrackWithTrackID {
+-(IBAction) runTestDeepLinkTrackWithTrackID {
     [self runtTestDeepLinkTrackWithTrackID];
 }
 
--(void) runTestDeepLinkTrack {
+-(IBAction) runTestDeepLinkTrack {
     
     MPMediaItem *item = [[MPMusicPlayerController systemMusicPlayer] nowPlayingItem];
     if(!item) {
@@ -138,7 +143,7 @@
 
 }
 
--(void) runTestDeepLinkTrackWithSynced {
+-(IBAction) runTestDeepLinkTrackWithSynced {
     
     MPMediaItem *item = [[MPMusicPlayerController systemMusicPlayer] nowPlayingItem];
     if(!item) {
@@ -296,8 +301,8 @@
 
 #pragma mark  - UI Helper
 
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message delegate:(id)_delegate {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+- (void)showAlertWithTitle:(NSString *)__title message:(NSString *)message delegate:(id)_delegate {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:__title
                                                     message:message
                                                    delegate:_delegate
                                           cancelButtonTitle:nil

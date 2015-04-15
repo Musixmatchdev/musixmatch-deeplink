@@ -27,5 +27,15 @@
     
 }
 
+@property(nonatomic,strong) IBOutlet UIImageView *artWork;
+@property(nonatomic,strong) IBOutlet UILabel *titleTrack;
+@property(nonatomic,strong) IBOutlet UILabel *artist;
+@property(nonatomic,strong) IBOutlet UILabel *album;
+@property(nonatomic,strong) IBOutlet UIButton *playPauseButton;
+@property(nonatomic,strong) IBOutlet UIButton *nextTrackButton;
+@property(nonatomic,strong) IBOutlet UIButton *prevTrackButton;
+@property(nonatomic,strong) IBOutlet UISlider *trackProgress;
+@property(nonatomic,strong) IBOutlet UILabel *trackRemainingTime;
+
 @end
 

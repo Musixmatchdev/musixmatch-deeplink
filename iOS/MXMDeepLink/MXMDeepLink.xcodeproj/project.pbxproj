@@ -80,7 +80,6 @@
 		84B056181ADED39F003A95CC /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				84C7D70619D5D6D9004C476E /* MXMDeepLinkHelper.h */,
 				84C7D6F219D5D6C1004C476E /* MXMDeepLink.h */,
 			);
 			name = Headers;
@@ -89,6 +88,7 @@
 		84B056191ADED3A6003A95CC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84C7D70619D5D6D9004C476E /* MXMDeepLinkHelper.h */,
 				84C7D70719D5D6D9004C476E /* MXMDeepLinkHelper.m */,
 			);
 			name = Classes;
