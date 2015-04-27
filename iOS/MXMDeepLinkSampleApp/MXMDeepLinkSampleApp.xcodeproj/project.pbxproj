@@ -326,6 +326,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILDNUMBER = 2015042700;
+				BUNDLEID = com.musixmatch.mxmdeeplink;
+				BUNDLEVERSION = 1.0.1;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -344,6 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILDNUMBER = 2015042700;
+				BUNDLEID = com.musixmatch.mxmdeeplink.enterprise;
+				BUNDLEVERSION = 1.0.1;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: MUSIXMATCH SPA";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,7 +359,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = DeepLink;
-				PROVISIONING_PROFILE = "b25003d9-e8d8-4c51-b1f0-782d96b64a6d";
+				PROVISIONING_PROFILE = "89da2462-d54f-447a-a924-f8085e9436f4";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 x86_64 i386";
 			};
