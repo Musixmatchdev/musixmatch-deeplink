@@ -21,7 +21,11 @@ Please take a look at the Musixmatch Deeplink offical documentation for the curr
 To get an API Key please sign up [here](https://developer.musixmatch.com/mmplans)
 
 ##### iOS DeepLink Sample App
-![Alt text](https://cloud.githubusercontent.com/assets/163333/7181468/3ff20260-e44b-11e4-9c6b-1637f600cee2.png "iOS DeepLink Sample App")
+Run the iOS Sample App to check to deep linking against [Musixmatch iOS App](https://itunes.apple.com/us/app/musixmatch/id448278467?mt=8).
+
+A binary version (IPA) iOS of the sample app is available through [HockeyApp](https://rink.hockeyapp.net/apps/1346cafe29617aa0f5fdfa0da55cc09d).
+
+![iOS DeepLink Sample App](https://cloud.githubusercontent.com/assets/163333/7181468/3ff20260-e44b-11e4-9c6b-1637f600cee2.png "iOS DeepLink Sample App")
 
 ##### Android Deeplink Sample App
 Coming soon...
