@@ -328,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILDNUMBER = 2015042700;
 				BUNDLEID = com.musixmatch.mxmdeeplink;
-				BUNDLEVERSION = 1.0.1;
+				BUNDLEVERSION = 1.0.2;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILDNUMBER = 2015042700;
 				BUNDLEID = com.musixmatch.mxmdeeplink.enterprise;
-				BUNDLEVERSION = 1.0.1;
+				BUNDLEVERSION = 1.0.2;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: MUSIXMATCH SPA";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
