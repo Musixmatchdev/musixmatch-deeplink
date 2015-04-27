@@ -104,7 +104,7 @@ enum {
     
     switch (hostType) {
         case MXMDeepLinkHostTypeMatch:
-            path=@"matcher";
+            path=@"match";
             break;
         case MXMDeepLinkHostTypeLyrics:
             path=@"lyrics";
